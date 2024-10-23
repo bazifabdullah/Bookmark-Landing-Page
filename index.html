@@ -9,18 +9,41 @@
     <link rel="stylesheet" href="src/output.css">
     <title>Bookmark | A simple bookmark manager</title>
 </head>
-<body class="font-rubik text-veryDarkBlue">
+<body class="font-rubik text-veryDarkBlue" id="body">
     <!-- Nav -->
     <nav class="container relative mx-auto p-6">
-        <div class="flex flex-row justify-between items-center max-w-6xl mx-auto">
+        <div class="relative flex flex-row justify-between items-center max-w-6xl mx-auto">
             <div>
                 <img src="images/logo-bookmark.svg" alt="logo-bookmark">
             </div>
-            <div class="hidden space-x-10 text-xs md:flex md:items-center">
+            <div class="hidden space-x-10 text-xs md:flex md:items-center tracking-widest">
                 <a href="#" class="hover:text-softRed">FEATURES</a>
                 <a href="#" class="hover:text-softRed">PRINCING</a>
                 <a href="#" class="hover:text-softRed">CONTACT</a>
                 <a href="#" class="text-white bg-softRed rounded-md border-softRed border-2 px-4 py-1 hover:text-softRed hover:border-softRed hover:bg-white">LOGIN</a>
+            </div>
+            <!-- Hamburger Icon -->
+            <div id="menu-btn" class="block hamburger md:hidden">
+                <img src="images/icon-hamburger.svg" alt="icon-hamburger">
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden fixed px-6 py-8 top-0 left-0 w-screen h-screen bg-veryDarkBlue bg-opacity-95 flex-col text-white justify-between z-50" id="mobile-menu">
+            <div class="flex flex-col space-y-12">
+                <div class="flex flex-row justify-between items-center">
+                    <img src="images/logo-bookmark-menu.svg" alt="logo-bookmark">
+                    <img src="images/icon-close.svg" alt="icon-close" id="close-btn">
+                </div>
+                <div class="flex flex-col justify-center items-center text-xl font-extralight">
+                    <a href="#" class="border-t border-b border-grayishBlue border-opacity-30 w-full text-center py-4">FEATURES</a>
+                    <a href="#" class="border-b border-grayishBlue border-opacity-30 w-full text-center py-4">PRINCING</a>
+                    <a href="#" class="border-b border-grayishBlue border-opacity-30 w-full text-center py-4">CONTACT</a>
+                    <a href="#" class="border-2 mt-6 border-white rounded-md w-full text-center py-2">LOGIN</a>
+                </div>
+            </div>
+            <div class="flex flex-row items-center justify-center space-x-10">
+                <img src="images/icon-facebook.svg" alt="icon-facebook">
+                <img src="images/icon-twitter.svg" alt="icon-twitter">
             </div>
         </div>
     </nav>
@@ -117,7 +140,7 @@
     </section>
     <!-- Extensions -->
     <section id="extensions">
-        <div class="flex flex-col mt-32 mx-auto max-w-6xl items-center justify-center space-y-6">
+        <div class="flex flex-col mt-32 mx-auto max-w-6xl items-center justify-center space-y-6 -z-40">
             <!-- Headline -->
             <div class="flex flex-col items-center space-y-6 max-w-md">
                 <h2 class="text-2xl font-bold md:text-3xl">
@@ -293,5 +316,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Script -->
+    <script src="script/script.js"></script>
 </body>
 </html>
