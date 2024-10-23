@@ -1,3 +1,5 @@
+// Mobile Menu
+
 const body = document.getElementById('body');
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
@@ -14,3 +16,57 @@ closeBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('flex');
     body.classList.remove('overflow-hidden')
 })
+
+// Feature Section
+
+function switchTab(activeTab, inactiveTabs, activeFeature, inactiveFeatures) {
+    activeTab.classList.add('tab-btn-border');
+    inactiveTabs.forEach(tab => tab.classList.remove('tab-btn-border'));
+
+    activeFeature.classList.add('flex');
+    activeFeature.classList.remove('hidden');
+    inactiveFeatures.forEach(feature => {
+        feature.classList.add('hidden');
+        feature.classList.remove('flex');
+    });
+}
+
+const firstFeature = document.getElementById('first-feature')
+const secondFeature = document.getElementById('second-feature')
+const thirdFeature = document.getElementById('third-feature')
+
+// Event Listeners for large screens
+
+const firstTabBtnLg = document.getElementById('first-tab-btn-lg')
+const secondTabBtnLg = document.getElementById('second-tab-btn-lg')
+const thirdTabBtnLg = document.getElementById('third-tab-btn-lg')
+
+firstTabBtnLg.addEventListener('click', () => {
+    switchTab(firstTabBtnLg, [secondTabBtnLg, thirdTabBtnLg], firstFeature, [secondFeature, thirdFeature]);
+});
+
+secondTabBtnLg.addEventListener('click', () => {
+    switchTab(secondTabBtnLg, [firstTabBtnLg, thirdTabBtnLg], secondFeature, [firstFeature, thirdFeature]);
+});
+
+thirdTabBtnLg.addEventListener('click', () => {
+    switchTab(thirdTabBtnLg, [firstTabBtnLg, secondTabBtnLg], thirdFeature, [firstFeature, secondFeature]);
+});
+
+// Event Listeners for small screens
+
+const firstTabBtnSm = document.getElementById('first-tab-btn-sm')
+const secondTabBtnSm = document.getElementById('second-tab-btn-sm')
+const thirdTabBtnSm = document.getElementById('third-tab-btn-sm')
+
+firstTabBtnSm.addEventListener('click', () => {
+    switchTab(firstTabBtnSm, [secondTabBtnSm, thirdTabBtnSm], firstFeature, [secondFeature, thirdFeature]);
+});
+
+secondTabBtnSm.addEventListener('click', () => {
+    switchTab(secondTabBtnSm, [firstTabBtnSm, thirdTabBtnSm], secondFeature, [firstFeature, thirdFeature]);
+});
+
+thirdTabBtnSm.addEventListener('click', () => {
+    switchTab(thirdTabBtnSm, [firstTabBtnSm, secondTabBtnSm], thirdFeature, [firstFeature, secondFeature]);
+});

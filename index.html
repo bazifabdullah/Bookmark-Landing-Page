@@ -79,19 +79,31 @@
                     Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
                 </p>
             </div>
-            <!-- Feature Names -->
-            <div class="text-sm flex flex-col items-center space-y-8 space-x-0 md:py-3 md:px-3 md:flex-row md:space-x-16 md:space-y-0">
-                <a href="#" class="hover:text-softRed">Simple Bookmarking</a>
-                <a href="#" class="hover:text-softRed">Speedy Searching</a>
-                <a href="#" class="hover:text-softRed">Easy Sharing</a>
+            <!-- Feature Names - Large Screens -->
+            <div class="hidden text-sm md:flex items-center flex-row w-full max-w-lg justify-between border-b">
+                    <button id="first-tab-btn-lg" class="tab-btn-border pb-2 px-3 hover:text-softRed">Simple Bookmarking</button>
+                    <button id="second-tab-btn-lg" class="pb-2 px-3 hover:text-softRed">Speedy Searching</button>
+                    <button id="third-tab-btn-lg" class="pb-2 px-3 hover:text-softRed">Easy Sharing</button>
+            </div>
+            <!-- Feature Names - Small Screens -->
+            <div class="flex text-sm md:hidden items-center text-center px-6 flex-col w-full max-w-md">
+                <div class="border-y w-full">
+                    <button id="first-tab-btn-sm" class="tab-btn-border mx-auto max-w-max block py-4 hover:text-softRed">Simple Bookmarking</button>
+                </div>
+                <div class="border-b w-full">
+                    <button id="second-tab-btn-sm" class="mx-auto max-w-max block py-4 hover:text-softRed">Speedy Searching</button>
+                </div>
+                <div class="border-b w-full">
+                    <button id="third-tab-btn-sm" class="mx-auto max-w-max block py-4 hover:text-softRed">Easy Sharing</button>
+                </div>
             </div>
             <!-- First Feature -->
-            <div class="container space-y-12 flex flex-col justify-center p-8 mx-auto items-center md:p-0 md:flex-row">
+            <div id="first-feature" class="container space-y-12 flex flex-col justify-center p-8 mx-auto items-center md:p-0 md:flex-row md:px-4 md:space-y-0">
                 <div class="md:w-1/2">
                     <img src="images/illustration-features-tab-1.svg" alt="feature-image">
                 </div>
                 <div class="flex flex-col space-y-6 md:pl-12 md:max-w-md md:w-1/2">
-                    <h3 class="max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
+                    <h3 class=" max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
                         Bookmark in one click
                     </h3>
                     <p class="text-grayishBlue text-center text-sm md:text-left">
@@ -103,11 +115,11 @@
                 </div>
             </div>
             <!-- Second Feature -->
-            <div class="container space-y-12 hidden flex-col justify-center p-8 mx-auto items-center md:p-0 md:flex-row">
+            <div id="second-feature" class="container space-y-12 hidden flex-col justify-center p-8 mx-auto items-center md:p-0 md:flex-row md:px-4 md:space-y-0">
                 <div class="md:w-1/2">
                     <img src="images/illustration-features-tab-2.svg" alt="feature-image">
                 </div>
-                <div class="flex flex-col space-y-6 md:pl-12 md:max-w-md  md:w-1/2">
+                <div class="flex flex-col justify-center space-y-6 md:pl-12 md:max-w-md  md:w-1/2">
                     <h3 class="max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
                         Intelligent Search
                     </h3>
@@ -120,11 +132,11 @@
                 </div>
             </div>
             <!-- Thrid Feature -->
-            <div class="container space-y-12 hidden flex-col justify-center p-8 mx-auto items-center md:p-0 md:flex-row">
+            <div id="third-feature" class="container space-y-12 hidden flex-col justify-center p-8 mx-auto items-center md:p-0 md:flex-row md:px-4 md:space-y-0">
                 <div class="md:w-1/2">
                     <img src="images/illustration-features-tab-3.svg" alt="feature-image">
                 </div>
-                <div class="flex flex-col space-y-6 md:pl-12 md:max-w-md  md:w-1/2">
+                <div class="flex flex-col justify-center space-y-6 md:pl-12 md:max-w-md  md:w-1/2">
                     <h3 class="max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
                         Share your bookmarks
                     </h3>
