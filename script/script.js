@@ -8,13 +8,15 @@ const mobileMenu = document.getElementById('mobile-menu');
 menuBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('hidden');
     mobileMenu.classList.add('flex');
-    body.classList.add('overflow-hidden')
+    body.classList.add('overflow-y-hidden');
+    body.classList.add('h-full');
 })
 
 closeBtn.addEventListener('click', () => {
     mobileMenu.classList.add('hidden');
     mobileMenu.classList.remove('flex');
-    body.classList.remove('overflow-hidden')
+    body.classList.remove('overflow-y-hidden');
+    body.classList.remove('h-full');
 })
 
 // Feature Section
