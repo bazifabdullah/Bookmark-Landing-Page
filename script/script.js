@@ -70,3 +70,18 @@ secondTabBtnSm.addEventListener('click', () => {
 thirdTabBtnSm.addEventListener('click', () => {
     switchTab(thirdTabBtnSm, [firstTabBtnSm, secondTabBtnSm], thirdFeature, [firstFeature, secondFeature]);
 });
+
+// FAQs
+
+const faqContainer = document.querySelectorAll('.faq-container');
+
+faqContainer.forEach(faq => {
+    faq.addEventListener('click', () => {
+        const answer = faq.querySelector('.answer');
+        const arrowOpen = faq.querySelector('.arrow-open');
+        const arrowClose = faq.querySelector('.arrow-close');
+        answer.classList.toggle('hidden');
+        arrowOpen.classList.toggle('hidden');
+        arrowClose.classList.toggle('hidden');
+    })
+})
