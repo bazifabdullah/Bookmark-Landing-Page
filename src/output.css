@@ -594,10 +594,6 @@ video {
   position: relative;
 }
 
-.-right-36 {
-  right: -9rem;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -612,10 +608,6 @@ video {
 
 .top-3 {
   top: 0.75rem;
-}
-
-.top-36 {
-  top: 9rem;
 }
 
 .-z-10 {
@@ -639,12 +631,16 @@ video {
   margin-top: 3rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-32 {
   margin-top: 8rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .mt-6 {
@@ -661,10 +657,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-80 {
-  height: 20rem;
 }
 
 .h-screen {
@@ -759,6 +751,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
+.space-y-16 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1044,9 +1042,22 @@ video {
   outline-offset: 2px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .tab-btn-border {
   border-bottom: 2px solid hsl(0, 94%, 66%);
   font-weight: 500;
+}
+
+.right-capsule {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  background-color: hsl(231, 69%, 60%);
+  top: 30%;
+  right: -20%;
 }
 
 .placeholder\:text-gray-300::-moz-placeholder {
@@ -1102,6 +1113,10 @@ video {
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
@@ -1218,7 +1233,7 @@ video {
 }
 
 @media (min-width: 1440px) {
-  .xl\:pl-36 {
-    padding-left: 9rem;
+  .xl\:pl-40 {
+    padding-left: 10rem;
   }
 }
