@@ -85,3 +85,27 @@ faqContainer.forEach(faq => {
         arrowClose.classList.toggle('hidden');
     })
 })
+
+// Email Validation
+
+function validateEmail() {
+    const emailInput = document.getElementById('email-input');
+    const inputValue = emailInput.value;
+
+    const regex = /^[a-zA-Z0-9\.-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,8}$/;
+
+    const errorMsg = document.getElementById('error-msg');
+    const errorIcon = document.getElementById('error-icon');
+
+    if (regex.test(inputValue)) {
+        errorMsg.classList.add('hidden');
+        errorIcon.classList.add('hidden');
+        emailInput.value = ''
+    } else {
+        errorMsg.classList.remove('hidden');
+        errorIcon.classList.remove('hidden');
+    }
+}
+
+const contactBtn = document.getElementById('contact-btn');
+contactBtn.addEventListener('click', validateEmail);
