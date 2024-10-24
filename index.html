@@ -35,10 +35,10 @@
                     <img src="images/icon-close.svg" alt="icon-close" id="close-btn">
                 </div>
                 <div class="flex flex-col justify-center items-center text-xl font-extralight">
-                    <a href="#" class="border-t border-b border-grayishBlue border-opacity-30 w-full text-center py-4">FEATURES</a>
-                    <a href="#" class="border-b border-grayishBlue border-opacity-30 w-full text-center py-4">PRINCING</a>
-                    <a href="#" class="border-b border-grayishBlue border-opacity-30 w-full text-center py-4">CONTACT</a>
-                    <a href="#" class="border-2 mt-6 border-white rounded-md w-full text-center py-2">LOGIN</a>
+                    <a href="#" class="border-t border-b border-grayishBlue border-opacity-30 w-full text-center py-4 hover:text-gray-300">FEATURES</a>
+                    <a href="#" class="border-b border-grayishBlue border-opacity-30 w-full text-center py-4 hover:text-gray-300">PRINCING</a>
+                    <a href="#" class="border-b border-grayishBlue border-opacity-30 w-full text-center py-4 hover:text-gray-300">CONTACT</a>
+                    <a href="#" class="border-2 mt-6 border-white rounded-md w-full text-center py-2 hover:text-gray-300 hover:border-gray-300">LOGIN</a>
                 </div>
             </div>
             <div class="flex flex-row items-center justify-center space-x-10">
@@ -64,6 +64,8 @@
             </div>
             <div class="md:w-1/2 relative">
                 <img src="images/illustration-hero.svg" alt="illustration-hero">
+                <div class="right-capsule rounded-tl-full rounded-bl-full hidden xl:block"></div>
+                <div class="right-capsule-mobile rounded-tl-full rounded-bl-full block sm:hidden"></div>
             </div>
         </div>
     </section>
@@ -307,11 +309,11 @@
                     Stay up-to-date with what we're doing
                 </h2>
             </div>
-            <div class="flex flex-col items-center justify-center space-y-2 space-x-0 max-w-md md:flex-row md:space-x-2 md:space-y-0 md:items-start">
+            <div class="flex flex-col items-center justify-center space-y-3 space-x-0 max-w-md md:flex-row md:space-x-2 md:space-y-0 md:items-start">
                 <div class="relative">
-                    <input type="email" id="email-input" placeholder="Enter your email address" class="border-2 border-white outline-none rounded-md py-2 pl-4 pr-16 placeholder:text-gray-300 text-black">
+                    <input type="email" id="email-input" placeholder="Enter your email address" class="border-2 border-white outline-none rounded-md py-2 pl-4 pr-16 placeholder:text-gray-300 text-veryDarkBlue">
                     <img src="images/icon-error.svg" alt="icon-error" id="error-icon" class="hidden absolute right-2 top-3">
-                    <div id="error-msg" class="hidden bg-softRed rounded-bl-md rounded-br-md px-2">
+                    <div id="error-msg" class="hidden -mt-1 bg-softRed rounded-bl-md rounded-br-md px-2 pt-2">
                         <p class="text-right text-sm">
                             Whoops! Make sure its an email
                         </p>

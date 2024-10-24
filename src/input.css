@@ -2,11 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body {
     overflow-x: hidden;
 }
 
 .tab-btn-border {
     border-bottom: 2px solid hsl(0, 94%, 66%);
     font-weight: 500;
+}
+
+.right-capsule {
+    width: 80%;
+    height: 80%;
+    background-color: #5368DF;
+    position: absolute;
+    right: 0%;
+    top: 25%;
+    z-index: -10;
+}
+
+.right-capsule-mobile {
+    background-color: #5368DF;
+    position: absolute;
+    z-index: -10;
+    height: 80%;
+    width: 80%;
+    right: 0%;
+    top: 25%;
+}
+
+.left-capsule {
+    background-color: #5368DF;
+    position: absolute;
+    z-index: -10;
+    height: 80%;
+    width: 80%;
+    left: 0%;
+    top: 25%;
 }
