@@ -72,17 +72,17 @@
     <!-- Features -->
     <section id="features">
         <!-- Headline -->
-        <div class="mt-36 mx-auto flex flex-col space-y-16 justify-center items-center max-w-6xl">
+        <div class="mt-36 container mx-auto flex flex-col space-y-16 justify-center items-center">
             <div class="flex justify-center items-center flex-col space-y-6">
                 <h2 class="text-2xl font-bold md:text-3xl">
                     Features
                 </h2>
-                <p class="text-grayishBlue text-sm text-center max-w-md px-6 md:px-4 md:text-base">
+                <p class="text-grayishBlue text-sm text-center max-w-lg px-6 md:px-4 md:text-base">
                     Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
                 </p>
             </div>
             <!-- Feature Names - Large Screens -->
-            <div class="hidden text-sm md:flex items-center flex-row w-full max-w-lg justify-between border-b">
+            <div class="hidden text-base md:flex items-center flex-row w-full max-w-xl justify-between border-b">
                     <button id="first-tab-btn-lg" class="tab-btn-border pb-2 px-3 hover:text-softRed">Simple Bookmarking</button>
                     <button id="second-tab-btn-lg" class="pb-2 px-3 hover:text-softRed">Speedy Searching</button>
                     <button id="third-tab-btn-lg" class="pb-2 px-3 hover:text-softRed">Easy Sharing</button>
@@ -100,53 +100,71 @@
                 </div>
             </div>
             <!-- First Feature -->
-            <div id="first-feature" class="container space-y-12 flex flex-col justify-center p-8 mx-auto items-center md:p-0 md:flex-row md:px-4 md:space-y-0">
-                <div class="md:w-1/2">
-                    <img src="images/illustration-features-tab-1.svg" alt="feature-image">
+            <div id="first-feature" class="container space-y-12 flex flex-col mx-auto items-center md:p-0 md:flex-row md:space-y-0">
+                <div class="md:w-1/2 relative flex justify-center">
+                    <div class="p-8">    
+                        <img src="images/illustration-features-tab-1.svg" alt="feature-image">
+                    </div>
+                    <div class="left-capsule rounded-tr-full rounded-br-full hidden xl:block"></div>
+                    <div class="left-capsule-mobile rounded-tr-full rounded-br-full block sm:hidden"></div>
                 </div>
-                <div class="flex flex-col space-y-6 md:pl-12 md:max-w-md md:w-1/2">
-                    <h3 class=" max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
-                        Bookmark in one click
-                    </h3>
-                    <p class="text-grayishBlue text-center text-sm md:text-left">
-                        Organize your bookmarks however you like. Our simple drag-and-drop interface guves you complete control over how you manage your favourite sites.
-                    </p>
-                    <div class="hidden md:flex md:justify-start">
-                        <a href="#" class="bg-softBlue text-white py-2 px-4 rounded-md border-2 border-softBlue hover:bg-white hover:text-softBlue">More info</a>
+                <div class="flex flex-col space-y-6 justify-center items-start lg:pl-12 md:w-1/2">
+                    <div class="flex flex-col space-y-6 max-w-md p-8 pt-0 md:p-0">
+                        <h3 class=" max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
+                            Bookmark in one click
+                        </h3>
+                        <p class="text-grayishBlue text-center text-base md:text-lg md:text-left">
+                            Organize your bookmarks however you like. Our simple drag-and-drop interface guves you complete control over how you manage your favourite sites.
+                        </p>
+                        <div class="hidden md:flex md:justify-start">
+                            <a href="#" class="bg-softBlue text-white py-2 px-5 text-base rounded-md border-2 border-softBlue hover:bg-white hover:text-softBlue">More info</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Second Feature -->
-            <div id="second-feature" class="container space-y-12 hidden flex-col justify-center p-8 mx-auto items-center md:p-0 md:flex-row md:px-4 md:space-y-0">
-                <div class="md:w-1/2">
-                    <img src="images/illustration-features-tab-2.svg" alt="feature-image">
+            <div id="second-feature" class="container space-y-12 hidden flex-col mx-auto items-center md:p-0 md:flex-row md:space-y-0">
+                <div class="md:w-1/2 relative flex justify-center">
+                    <div class="p-8">    
+                        <img src="images/illustration-features-tab-2.svg" alt="feature-image">
+                    </div>
+                    <div class="left-capsule-t2 rounded-tr-full rounded-br-full hidden xl:block"></div>
+                    <div class="left-capsule-mobile-t2 rounded-tr-full rounded-br-full block sm:hidden"></div>
                 </div>
-                <div class="flex flex-col justify-center space-y-6 md:pl-12 md:max-w-md  md:w-1/2">
-                    <h3 class="max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
-                        Intelligent Search
-                    </h3>
-                    <p class="text-grayishBlue text-center text-sm md:text-left">
-                        Our Powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
-                    </p>
-                    <div class="hidden md:flex md:justify-start">
-                        <a href="#" class="bg-softBlue text-white py-2 px-4 rounded-md border-2 border-softBlue hover:bg-white hover:text-softBlue">More info</a>
+                <div class="flex flex-col space-y-6 justify-center items-start lg:pl-12 md:w-1/2">
+                    <div class="flex flex-col space-y-6 max-w-md p-8 pt-0 md:p-0">
+                        <h3 class="max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
+                            Intelligent Search
+                        </h3>
+                        <p class="text-grayishBlue text-center text-sm md:text-left">
+                            Our Powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+                        </p>
+                        <div class="hidden md:flex md:justify-start">
+                            <a href="#" class="bg-softBlue text-white py-2 px-5 rounded-md border-2 border-softBlue hover:bg-white hover:text-softBlue">More info</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Thrid Feature -->
-            <div id="third-feature" class="container space-y-12 hidden flex-col justify-center p-8 mx-auto items-center md:p-0 md:flex-row md:px-4 md:space-y-0">
-                <div class="md:w-1/2">
-                    <img src="images/illustration-features-tab-3.svg" alt="feature-image">
+            <div id="third-feature" class="container space-y-12 hidden flex-col mx-auto items-center md:p-0 md:flex-row md:space-y-0">
+                <div class="md:w-1/2 relative flex justify-center">
+                    <div class="p-8">    
+                        <img src="images/illustration-features-tab-3.svg" alt="feature-image">
+                    </div>
+                    <div class="left-capsule-t3 rounded-tr-full rounded-br-full hidden xl:block"></div>
+                    <div class="left-capsule-mobile-t3 rounded-tr-full rounded-br-full block sm:hidden"></div>
                 </div>
-                <div class="flex flex-col justify-center space-y-6 md:pl-12 md:max-w-md  md:w-1/2">
-                    <h3 class="max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
-                        Share your bookmarks
-                    </h3>
-                    <p class="text-grayishBlue text-center text-sm md:text-left">
-                        Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
-                    </p>
-                    <div class="hidden md:flex md:justify-start">
-                        <a href="#" class="bg-softBlue text-white py-2 px-4 rounded-md border-2 border-softBlue hover:bg-white hover:text-softBlue">More info</a>
+                <div class="flex flex-col space-y-6 justify-center items-start lg:pl-12 md:w-1/2">
+                    <div class="flex flex-col space-y-6 max-w-md p-8 pt-0 md:p-0">
+                        <h3 class="max-w-md text-2xl font-bold text-center md:text-3xl md:text-left">
+                            Share your bookmarks
+                        </h3>
+                        <p class="text-grayishBlue text-center text-sm md:text-left">
+                            Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+                        </p>
+                        <div class="hidden md:flex md:justify-start">
+                            <a href="#" class="bg-softBlue text-white py-2 px-4 rounded-md border-2 border-softBlue hover:bg-white hover:text-softBlue">More info</a>
+                        </div>
                     </div>
                 </div>
             </div>

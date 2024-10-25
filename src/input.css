@@ -31,12 +31,33 @@ html, body {
     top: 25%;
 }
 
-.left-capsule {
+.left-capsule, .left-capsule-t2, .left-capsule-t3 {
     background-color: #5368DF;
     position: absolute;
     z-index: -10;
-    height: 80%;
+    height: 85%;
     width: 80%;
     left: 0%;
     top: 25%;
+}
+
+.left-capsule-mobile, .left-capsule-mobile-t2, .left-capsule-mobile-t3 {
+    background-color: #5368DF;
+    position: absolute;
+    z-index: -10;
+    height: 75%;
+    width: 85%;
+    left: 0%;
+    top: 25%;
+}
+
+.left-capsule-t2, .left-capsule-t3 {
+    height: 75%;
+    width: 70%;
+}
+
+.left-capsule-mobile-t2, .left-capsule-mobile-t3 {
+    height: 65%;
+    width: 75%;
+    top: 30%;
 }
