@@ -11,6 +11,8 @@ html, body {
     font-weight: 500;
 }
 
+/* Feature and Hero Section */
+
 .right-capsule {
     width: 80%;
     height: 80%;
@@ -60,4 +62,16 @@ html, body {
     height: 65%;
     width: 75%;
     top: 30%;
+}
+
+/* FAQ */
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+.active {
+    max-height: 300px;
 }

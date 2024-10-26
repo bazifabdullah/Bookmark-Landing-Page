@@ -979,10 +979,6 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1012,11 +1008,6 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -1089,6 +1080,8 @@ html, body {
   font-weight: 500;
 }
 
+/* Feature and Hero Section */
+
 .right-capsule {
   width: 80%;
   height: 80%;
@@ -1138,6 +1131,18 @@ html, body {
   height: 65%;
   width: 75%;
   top: 30%;
+}
+
+/* FAQ */
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.active {
+  max-height: 300px;
 }
 
 .placeholder\:text-gray-300::-moz-placeholder {
@@ -1304,14 +1309,14 @@ html, body {
     line-height: 1.5rem;
   }
 
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:shadow-lg {

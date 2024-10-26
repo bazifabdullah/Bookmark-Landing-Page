@@ -82,7 +82,7 @@ faqContainer.forEach(faq => {
         const answer = faq.querySelector('.answer');
         const arrowOpen = faq.querySelector('.arrow-open');
         const arrowClose = faq.querySelector('.arrow-close');
-        answer.classList.toggle('hidden');
+        answer.classList.toggle('active');
         arrowOpen.classList.toggle('hidden');
         arrowClose.classList.toggle('hidden');
     })
