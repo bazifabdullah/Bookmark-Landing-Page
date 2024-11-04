@@ -111,3 +111,34 @@ function validateEmail() {
 
 const contactBtn = document.getElementById('contact-btn');
 contactBtn.addEventListener('click', validateEmail);
+
+// Login Form
+
+const loginBtn = document.getElementById('login-btn-lg');
+const loginCloseBtn = document.getElementById('login-close-btn');
+const loginForm = document.getElementById('login-form');
+
+const sections = {
+    'nav': document.getElementById('nav'),
+    'hero': document.getElementById('hero'),
+    'features': document.getElementById('features'),
+    'extensions': document.getElementById('extensions'),
+    'faq': document.getElementById('faq'),
+    'CTA': document.getElementById('CTA'),
+    'footer': document.getElementById('footer'),
+}
+
+
+loginBtn.addEventListener('click', () => {
+    loginForm.classList.remove('hidden');
+    for (const section in sections) {
+        sections[section].classList.add('blur-bg')
+    }
+});
+
+loginCloseBtn.addEventListener('click', () => {
+    loginForm.classList.add('hidden');
+    for (const section in sections) {
+        sections[section].classList.remove('blur-bg')
+    }
+});
