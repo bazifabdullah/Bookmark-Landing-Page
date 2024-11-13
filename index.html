@@ -15,7 +15,7 @@
     <nav class="container relative mx-auto p-6" id="nav">
         <div class="relative flex flex-row justify-between items-center max-w-6xl mx-auto">
             <div>
-                <img src="images/logo-bookmark.svg" alt="logo-bookmark">
+                <img src="images/logo-bookmark.svg" alt="logo-bookmark" class="cursor-pointer">
             </div>
             <div class="hidden space-x-10 text-sm md:flex md:items-center tracking-widest">
                 <a href="#" class="hover:text-softRed">FEATURES</a>
@@ -33,7 +33,7 @@
             <div class="flex flex-col space-y-12">
                 <div class="flex flex-row justify-between items-center">
                     <img src="images/logo-bookmark-menu.svg" alt="logo-bookmark">
-                    <img src="images/icon-close.svg" alt="icon-close" id="close-btn">
+                    <img src="images/icon-close.svg" alt="icon-close" id="close-btn" draggable="false">
                 </div>
                 <div class="flex flex-col justify-center items-center text-xl font-extralight">
                     <a href="#" class="border-t border-b border-grayishBlue border-opacity-30 w-full text-center py-4 hover:text-gray-300">FEATURES</a>
@@ -52,8 +52,9 @@
     <section class=" h-full w-full relative bg-transparent">
         <div class="hidden fixed transform -translate-x-1/2 -translate-y-1/2 z-50 top-1/2 left-1/2" id="login-form">
             <div class="wrapper md:w-96">
-                <div class="title flex items-center justify-center p-6">
-                   <img src="images/logo-bookmark-menu.svg" alt="logo-bookmark" class="scale-125">
+                <div class="title flex items-center justify-between p-6">
+                   <img src="images/logo-bookmark-menu.svg" alt="logo-bookmark">
+                   <img src="images/icon-close.svg" alt="icon-close" id="login-close-btn" class="cursor-pointer" draggable="false">
                 </div>
                 <form action="#">
                    <div class="field">
@@ -65,8 +66,8 @@
                       <label class="px-2">Password</label>
                    </div>
                    <div class="content">
-                      <div class="checkbox">
-                         <input type="checkbox" id="remember-me" class="md:w-4 md:h-4">
+                      <div class="checkbox flex items-center space-x-1">
+                         <input type="checkbox" id="remember-me" class="cursor-pointer">
                          <label for="remember-me" class="text-xs md:text-base">Remember me</label>
                       </div>
                       <div class="pass-link">
@@ -77,10 +78,48 @@
                       <input type="submit" value="Login">
                    </div>
                    <div class="signup-link text-sm md:text-base">
-                      Not a member? <a href="#">Signup now</a>
+                      Not a member? <a href="#" id="signup-btn">Signup now</a>
                    </div>
-                   <div class="close-menu mt-4 text-center cursor-pointer -mb-4 hover:text-softRed hover:underline text-sm md:text-base" id="login-close-btn">
-                    Close
+                </form>
+             </div>
+        </div>
+    </section>
+    <!-- Sign Up Form -->
+    <section class=" h-full w-full relative bg-transparent">
+        <div class="hidden fixed transform -translate-x-1/2 -translate-y-1/2 z-50 top-1/2 left-1/2" id="signup-form">
+            <div class="wrapper md:w-96">
+                <div class="title flex items-center justify-between p-6">
+                   <img src="images/logo-bookmark-menu.svg" alt="logo-bookmark">
+                   <img src="images/icon-close.svg" alt="icon-close" id="login-close-btn" class="cursor-pointer" draggable="false">
+                </div>
+                <form action="#">
+                   <div class="field">
+                      <input type="text" required>
+                      <label class="px-2">Full Name</label>
+                   </div>
+                   <div class="field">
+                      <input type="text" required>
+                      <label class="px-2">Email Address</label>
+                   </div>
+                   <div class="field">
+                      <input type="password" required>
+                      <label class="px-2">Password</label>
+                   </div>
+                   <div class="field">
+                      <input type="password" required>
+                      <label class="px-2">Confirm Password</label>
+                   </div>
+                   <div class="content-signup">
+                    <div class="checkbox flex items-center space-x-2">
+                       <input type="checkbox" id="remember-me" class="cursor-pointer">
+                       <label for="remember-me" class="text-xs md:text-base">I agree to <span class="font-bold cursor-pointer hover:text-softRed">Terms & Condition</span></label>
+                    </div>
+                 </div>
+                   <div class="field">
+                      <input type="submit" value="Sign Up">
+                   </div>
+                   <div class="signup-link text-sm md:text-base">
+                      Already a member? <a href="#">Login now</a>
                    </div>
                 </form>
              </div>

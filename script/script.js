@@ -146,9 +146,15 @@ loginBtnSm.addEventListener('click', () => {
     }
 });
 
-loginCloseBtn.addEventListener('click', () => {
+function closeForm() {
     loginForm.classList.add('hidden');
     for (const section in sections) {
         sections[section].classList.remove('blur-bg')
     }
-});
+}
+
+loginCloseBtn.addEventListener('click', closeForm);
+
+// Sign Up Form
+
+const signupBtn = document.getElementById('signup-btn');

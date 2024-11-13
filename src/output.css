@@ -631,10 +631,6 @@ video {
   margin-right: auto;
 }
 
-.-mb-4 {
-  margin-bottom: -1rem;
-}
-
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -657,10 +653,6 @@ video {
 
 .mt-36 {
   margin-top: 9rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mt-6 {
@@ -739,12 +731,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.scale-125 {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -787,10 +773,22 @@ video {
   margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1115,7 +1113,8 @@ video {
   outline-offset: 2px;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -1129,7 +1128,7 @@ html, body {
 .right-capsule {
   width: 80%;
   height: 80%;
-  background-color: #5368DF;
+  background-color: #5368df;
   position: absolute;
   right: 0%;
   top: 25%;
@@ -1137,7 +1136,7 @@ html, body {
 }
 
 .right-capsule-mobile {
-  background-color: #5368DF;
+  background-color: #5368df;
   position: absolute;
   z-index: -10;
   height: 80%;
@@ -1146,8 +1145,10 @@ html, body {
   top: 25%;
 }
 
-.left-capsule, .left-capsule-t2, .left-capsule-t3 {
-  background-color: #5368DF;
+.left-capsule,
+.left-capsule-t2,
+.left-capsule-t3 {
+  background-color: #5368df;
   position: absolute;
   z-index: -10;
   height: 85%;
@@ -1156,8 +1157,10 @@ html, body {
   top: 25%;
 }
 
-.left-capsule-mobile, .left-capsule-mobile-t2, .left-capsule-mobile-t3 {
-  background-color: #5368DF;
+.left-capsule-mobile,
+.left-capsule-mobile-t2,
+.left-capsule-mobile-t3 {
+  background-color: #5368df;
   position: absolute;
   z-index: -10;
   height: 75%;
@@ -1166,12 +1169,14 @@ html, body {
   top: 25%;
 }
 
-.left-capsule-t2, .left-capsule-t3 {
+.left-capsule-t2,
+.left-capsule-t3 {
   height: 75%;
   width: 70%;
 }
 
-.left-capsule-mobile-t2, .left-capsule-mobile-t3 {
+.left-capsule-mobile-t2,
+.left-capsule-mobile-t3 {
   height: 65%;
   width: 75%;
   top: 30%;
@@ -1182,7 +1187,7 @@ html, body {
 .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-in-out;
+  transition: max-height 0.6s ease-in;
 }
 
 .active {
@@ -1191,33 +1196,33 @@ html, body {
 
 /* Login Form */
 
-.wrapper{
+.wrapper {
   width: 300px;
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .title{
+.wrapper .title {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   border-radius: 15px 15px 0 0;
-  background: linear-gradient(135deg, #5368DF, #fa5757);
+  background: linear-gradient(135deg, #5368df, #fa5757);
 }
 
-.wrapper form{
-  padding: 10px 30px 50px 30px;
+.wrapper form {
+  padding: 10px 30px 25px 30px;
 }
 
-.wrapper form .field{
+.wrapper form .field {
   height: 50px;
   width: 100%;
   margin-top: 20px;
   position: relative;
 }
 
-.wrapper form .field input{
+.wrapper form .field input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -1229,32 +1234,32 @@ html, body {
 }
 
 .wrapper form .field input:focus,
-  form .field input:valid{
-  border-color: #5368DF;
+form .field input:valid {
+  border-color: #5368df;
 }
 
-.wrapper form .field label{
+.wrapper form .field label {
   position: absolute;
   top: 50%;
   left: 20px;
   color: #999999;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
   pointer-events: none;
   transform: translateY(-50%);
   transition: all 0.3s ease;
 }
 
 form .field input:focus ~ label,
-form .field input:valid ~ label{
+form .field input:valid ~ label {
   top: 0%;
   font-size: 16px;
-  color: #5368DF;
+  color: #5368df;
   background: #fff;
   transform: translateY(-50%);
 }
 
-form .content{
+form .content {
   display: flex;
   width: 100%;
   height: 50px;
@@ -1263,19 +1268,19 @@ form .content{
   justify-content: space-around;
 }
 
-form .content .checkbox{
+form .content .checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-form .content input{
-  width: 10px;
-  height: 10px;
+form .content input {
+  width: 13px;
+  height: 13px;
   background: red;
 }
 
-form .content label{
+form .content label {
   color: #262626;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1283,44 +1288,55 @@ form .content label{
   padding-left: 5px;
 }
 
-form .content .pass-link{
-  color: "";
+form .content .pass-link {
+  color: '';
 }
 
-form .field input[type="submit"]{
+form .field input[type='submit'] {
   color: #fff;
   border: none;
   padding-left: 0;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   cursor: pointer;
-  background: linear-gradient(-135deg, #5368DF, #fa5757);
+  background: linear-gradient(-135deg, #5368df, #fa5757);
   transition: all 0.3s ease;
   margin-top: -15px;
 }
 
-form .field input[type="submit"]:active{
+form .field input[type='submit']:active {
   transform: scale(0.95);
 }
 
-form .signup-link{
+form .signup-link {
   color: #262626;
   text-align: center;
 }
 
 form .pass-link a,
-form .signup-link a{
-  color: #5368DF;
+form .signup-link a {
+  color: #5368df;
   text-decoration: none;
 }
 
 form .pass-link a:hover,
-form .signup-link a:hover{
+form .signup-link a:hover {
   text-decoration: underline;
 }
 
 .blur-bg {
   filter: blur(3px);
+}
+
+/* Sign Up Form - Little Tweaks in Style */
+
+form .content-signup {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  margin-left: 16px;
 }
 
 .placeholder\:text-gray-300::-moz-placeholder {
@@ -1368,10 +1384,6 @@ form .signup-link a:hover{
   color: hsl(0 94% 66% / var(--tw-text-opacity));
 }
 
-.hover\:underline:hover {
-  text-decoration-line: underline;
-}
-
 .hover\:shadow-none:hover {
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
@@ -1406,16 +1418,8 @@ form .signup-link a:hover{
     display: none;
   }
 
-  .md\:h-4 {
-    height: 1rem;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:w-4 {
-    width: 1rem;
   }
 
   .md\:w-96 {
