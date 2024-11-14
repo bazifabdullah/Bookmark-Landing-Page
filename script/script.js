@@ -129,32 +129,57 @@ const sections = {
     'footer': document.getElementById('footer'),
 }
 
-
-loginBtnLg.addEventListener('click', () => {
-    loginForm.classList.remove('hidden');
+function addBlurBg() {
     for (const section in sections) {
         sections[section].classList.add('blur-bg')
     }
+}
+
+function removeBlurBg() {
+    for (const section in sections) {
+        sections[section].classList.remove('blur-bg')
+    }
+}
+
+
+loginBtnLg.addEventListener('click', () => {
+    loginForm.classList.remove('hidden');
+    addBlurBg();
 });
 
 loginBtnSm.addEventListener('click', () => {
     loginForm.classList.remove('hidden');
     mobileMenu.classList.add('hidden');
     mobileMenu.classList.remove('flex');
-    for (const section in sections) {
-        sections[section].classList.add('blur-bg')
-    }
+    addBlurBg();
 });
 
 function closeForm() {
     loginForm.classList.add('hidden');
-    for (const section in sections) {
-        sections[section].classList.remove('blur-bg')
-    }
+    removeBlurBg();
 }
 
 loginCloseBtn.addEventListener('click', closeForm);
 
 // Sign Up Form
 
+const signupForm = document.getElementById('signup-form');
 const signupBtn = document.getElementById('signup-btn');
+const signupCloseBtn = document.getElementById('signup-close-btn');
+const loginNow = document.getElementById('login-now');
+
+signupBtn.addEventListener('click', () => {
+    signupForm.classList.remove('hidden');
+    loginForm.classList.add('hidden');
+    addBlurBg();
+})
+
+signupCloseBtn.addEventListener('click', () => {
+    signupForm.classList.add('hidden');
+    removeBlurBg();
+})
+
+loginNow.addEventListener('click', () => {
+    signupForm.classList.add('hidden');
+    loginForm.classList.remove('hidden');
+})
