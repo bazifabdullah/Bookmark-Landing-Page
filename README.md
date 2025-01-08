@@ -4,6 +4,10 @@
 
 Solution for a challenge by <a href="https://www.frontendmentor.io/home">Frontendmentor.io</a>
 
+## Live Preview
+
+<a href="https://bazifabdullah.github.io/Bookmark-Landing-Page/">Click to view</a>
+
 ## Built with
 
 HTML | TailwindCSS | JavaScript
